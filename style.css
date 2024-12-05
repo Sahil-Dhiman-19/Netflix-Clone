@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-size: max(1600px, 100vw);
+    background-repeat: no-repeat; 
+    height: 644px;
+    position: relative; 
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.6;
+    background: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    /* height: 100%; */
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    /* padding: 0px 22px; */
+    gap: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(1) {
+    font-size: 46px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    padding: 8px 14px;
+    font-weight: 400;
+    background-color: rgb(236, 0, 0);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-lang {
+    padding: 8px 14px;
+    font-weight: 400;
+    background-color: rgba(29, 29, 29, 0.185);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.btn-red {
+    font-size: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 11px 34px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid grey;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 66vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    top: 8px;
+    z-index: 10;
+}
+
+.secImg video {
+    width: 406px;
+    position: absolute;
+    top: 128px;
+    left: 72px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.third .secImg video {
+    width: 460px;
+    position: absolute;
+    top: 114px
+}
+
+.faq {
+    color: rgb(255, 255, 255);
+    margin: 40px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+}
+
+.faq-box svg {
+    filter: invert(1);
+}
+
+.faq-box {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    max-width: 60vw;
+    margin: 30px auto;
+    padding: 20px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    ;
+    margin: 60px auto;
+    max-width: 60vw;
+}
+
+footer .questions {
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+}
+
+.grid a {
+    display: block;
+    padding: 24px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 390px) {
+
+    .first {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .secImg img {
+        width: 330px;
+    }
+
+    .secImg video {
+        width: 244px;
+        top: 92px;
+        left: 42px;
+    }
+
+    .third .secImg video {
+        width: 280px;
+        position: absolute;
+        top: 80px
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
